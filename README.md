@@ -17,7 +17,7 @@ You only need one thing installed on your machine: **The Nix Package Manager**.
 
 If you don't have Nix installed, open your terminal and run the official multi-user installer:
 ```bash
-sh <(curl -L [https://nixos.org/nix/install](https://nixos.org/nix/install)) --daemon
+sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --daemon
 ```
 *(Note: Nix Flakes must be enabled. If you are on a fresh install, you may need
 to add `experimental-features = nix-command flakes` to your `~/.config/nix/nix.conf`).*
